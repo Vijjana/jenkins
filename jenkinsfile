@@ -1,27 +1,18 @@
-pipeline
-{
-agent any
-{
-stages
-{
-stage('checkout')
-{
-steps
-{
+pipeline{
+agent any{
+stages{
+stage('checkout'){
+steps{
 echo "pulling code from github"
 }
 }
-stage('build')
-{
-steps
-{
+stage('build'){
+steps{
 echo "building the code"
 }
 }
-stage('test')
-{
-steps
-{
+stage('test'){
+steps{
 echo "testing the code"
 }
 }
