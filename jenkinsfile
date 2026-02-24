@@ -1,0 +1,29 @@
+pipeline
+{
+agent any
+{
+stages
+{
+stage('checkout')
+{
+steps
+{
+echo "pulling code from github"
+}
+}
+stage('build')
+{
+steps
+{
+echo "building the code"
+}
+}
+stage('test')
+{
+steps
+{
+echo "testing the code"
+}
+}
+}
+}
